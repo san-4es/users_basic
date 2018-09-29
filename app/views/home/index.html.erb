@@ -1,1 +1,5 @@
-<h1> Домашняя страница <h1>
+<ol>
+<% @users.each do |u| %>
+  <li><%= u.name %></li>
+<% end %>
+</ol>
