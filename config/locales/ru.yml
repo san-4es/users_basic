@@ -1,0 +1,5 @@
+ru:
+  auth:
+    login: 'Вход'
+    registration: 'Регистрация'
+    logout: 'Выход'
