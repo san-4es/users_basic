@@ -1,5 +1,5 @@
 <ol>
-<% @users.each do |u| %>
-  <li><%= u.name %></li>
+<% @users.each do |user| %>
+  <li><%= login_name(user) %></li>
 <% end %>
 </ol>
