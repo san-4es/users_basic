@@ -10,8 +10,24 @@
   </head>
 
   <body>
-     <p class="notice"><%= notice %></p>
-     <p class="alert"><%= alert %></p>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
+    <ul>
+      <% if user_signed_in? %>
+        <li>
+          <%= link_to(t('auth.logout'), destroy_user_session_path, method: :delete) %>        
+        </li>
+      <% else %>
+        <li>
+          <%= link_to(t('auth.login'), new_user_session_path)  %>  
+        </li>
+        <li>
+          <%= link_to(t('auth.registration'), new_user_registration_path)  %>   
+        </li>
+      <% end %>
+    </ul>
+
     <h1> Users basic </h1> 
     <%=yield %>
   </body>

@@ -1,0 +1,24 @@
+ru:
+  visible: &visible
+    visible_email: 'E-mail для связи'
+  blank: &blank
+    blank: 'Пустое значение'
+
+  activerecord:
+    models:
+      user: 'Юзер'
+    attributes:
+      user:
+        email: 'Электронная почта'
+        password: 'Пароль'
+        password_confirmation: 'Подтверждение пароля'
+        name: 'Имя'
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              taken: 'уже используется'
+              blank: 'не можеть быть пустым'
+            password:
+              blank: ' не может быть пустым'
